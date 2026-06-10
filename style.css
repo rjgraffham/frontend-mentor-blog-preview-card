@@ -13,7 +13,7 @@
   --font-sml-bold: 800 14px/1.5 "Figtree", sans-serif;
   --card-width: 24rem;
   --radius-outer: 1.25rem;
-  --radius-inner: calc(radius-outer / 2);
+  --radius-inner: calc(var(--radius-outer) / 2);
   --spc-300: 1.5rem;
   --spc-150: 0.75rem;
   --spc-100: 0.5rem;
