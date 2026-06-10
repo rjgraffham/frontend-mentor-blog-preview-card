@@ -1,0 +1,14 @@
+:root {
+  --clr-yellow: hsl(47deg, 88%, 63%);
+  --clr-gray-950: hsl(0deg, 0%, 7%);
+  --clr-gray-500: hsl(0deg, 0%, 42%);
+  --clr-white: hsl(0deg, 0%, 100%);
+  --font-lrg: 800 24px/1.5 "Figtree", sans-serif;
+  --font-med: 500 16px/1.5 "Figtree", sans-serif;
+  --font-sml: 500 14px/1.5 "Figtree", sans-serif;
+  --font-sml-bold: 800 14px/1.5 "Figtree", sans-serif;
+  --spc-300: 24px;
+  --spc-150: 12px;
+  --spc-100: 8px;
+  --spc-50: 4px;
+}
