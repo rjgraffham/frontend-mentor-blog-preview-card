@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --clr-yellow: hsl(47deg, 88%, 63%);
   --clr-gray-950: hsl(0deg, 0%, 7%);
@@ -11,4 +15,31 @@
   --spc-150: 12px;
   --spc-100: 8px;
   --spc-50: 4px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+
+  font: var(--font-med);
+
+  display: grid;
+  grid-template-rows: var(--spc-300) auto var(--spc-300);
+}
+
+blog-card {
+  grid-row: 2;
+  place-self: center;
+}
+
+.attribution {
+  grid-row: 3;
+  place-self: end center;
+  padding: var(--spc-100);
 }
