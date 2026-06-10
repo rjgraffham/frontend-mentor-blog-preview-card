@@ -3,21 +3,33 @@
 }
 
 :root {
+  /* general variables */
   --clr-yellow: hsl(47deg, 88%, 63%);
   --clr-gray-950: hsl(0deg, 0%, 7%);
   --clr-gray-500: hsl(0deg, 0%, 42%);
   --clr-white: hsl(0deg, 0%, 100%);
-  --font-lrg: 800 24px/1.5 "Figtree", sans-serif;
-  --font-med: 500 16px/1.5 "Figtree", sans-serif;
-  --font-sml: 500 14px/1.5 "Figtree", sans-serif;
-  --font-sml-bold: 800 14px/1.5 "Figtree", sans-serif;
-  --card-width: 24rem;
   --radius-outer: 1.25rem;
   --radius-inner: calc(var(--radius-outer) / 2);
   --spc-300: 1.5rem;
   --spc-150: 0.75rem;
   --spc-100: 0.5rem;
   --spc-50: 0.25rem;
+  --font-card-byline: 800 14px/1.5 "Figtree", sans-serif;
+
+  /* screen-size variant variables */
+  --font-body: 500 16px/1.5 "Figtree", sans-serif;
+  --font-card-heading: 800 24px/1.5 "Figtree", sans-serif;
+  --font-card-tags: 800 14px/1.5 "Figtree", sans-serif;
+  --font-card-date: 500 14px/1.5 "Figtree", sans-serif;
+  --card-width: 24rem;
+
+  @media only screen and (width < 500px) {
+    --font-body: 500 14px/1.5 "Figtree", sans-serif;
+    --font-card-heading: 800 20px/1.5 "Figtree", sans-serif;
+    --font-card-tags: 800 12px/1.5 "Figtree", sans-serif;
+    --font-card-date: 500 12px/1.5 "Figtree", sans-serif;
+    --card-width: 20rem;
+  }
 }
 
 html,
@@ -32,7 +44,7 @@ body {
 
   background: var(--clr-yellow);
 
-  font: var(--font-med);
+  font: var(--font-body);
 
   display: grid;
   grid-template-rows: var(--spc-300) auto var(--spc-300);
@@ -49,6 +61,7 @@ blog-card {
   background: var(--clr-white);
 
   width: var(--card-width);
+
   padding: var(--spc-300);
 
   border: 1px solid var(--clr-gray-950);
@@ -66,7 +79,7 @@ blog-card {
   }
 
   h1 {
-    font: var(--font-lrg);
+    font: var(--font-card-heading);
   }
 
   p {
@@ -92,7 +105,7 @@ blog-main {
 
 blog-tags a {
   background: var(--clr-yellow);
-  font: var(--font-sml-bold);
+  font: var(--font-card-tags);
   padding: var(--spc-50) var(--spc-150);
   border-radius: var(--spc-50);
 
@@ -104,11 +117,11 @@ blog-tags a {
 }
 
 blog-date {
-  font: var(--font-sml);
+  font: var(--font-card-date);
 }
 
 blog-byline figure {
-  font: var(--font-sml-bold);
+  font: var(--font-card-byline);
   display: grid;
   grid-template-columns: 2rem auto;
   gap: var(--spc-150);
