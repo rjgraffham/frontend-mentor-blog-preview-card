@@ -23,7 +23,7 @@
   --font-card-date: 500 14px/1.5 "Figtree", sans-serif;
   --card-width: 24rem;
 
-  @media only screen and (width < 500px) {
+  @media only screen and (width < 768px) {
     --font-body: 500 14px/1.5 "Figtree", sans-serif;
     --font-card-heading: 800 20px/1.5 "Figtree", sans-serif;
     --font-card-tags: 800 12px/1.5 "Figtree", sans-serif;
