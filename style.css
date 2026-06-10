@@ -12,6 +12,8 @@
   --font-sml: 500 14px/1.5 "Figtree", sans-serif;
   --font-sml-bold: 800 14px/1.5 "Figtree", sans-serif;
   --card-width: 24rem;
+  --radius-outer: 1.25rem;
+  --radius-inner: calc(radius-outer / 2);
   --spc-300: 1.5rem;
   --spc-150: 0.75rem;
   --spc-100: 0.5rem;
@@ -28,6 +30,8 @@ body {
   width: 100dvw;
   height: 100dvh;
 
+  background: var(--clr-yellow);
+
   font: var(--font-med);
 
   display: grid;
@@ -37,8 +41,20 @@ body {
 blog-card {
   grid-row: 2;
   place-self: center;
+
+  background: var(--clr-white);
+
   width: var(--card-width);
   padding: var(--spc-300);
+
+  border: 1px solid var(--clr-gray-950);
+  border-radius: var(--radius-outer);
+
+  box-shadow: var(--spc-100) var(--spc-100);
+
+  img {
+    border-radius: var(--radius-inner);
+  }
 
   h1 {
     font: var(--font-lrg);
