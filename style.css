@@ -67,16 +67,20 @@ blog-card {
 
   h1 {
     font: var(--font-lrg);
-
-    cursor: pointer;
-
-    &:hover {
-      color: var(--clr-yellow);
-    }
   }
 
   p {
     color: var(--clr-gray-500);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: var(--clr-yellow);
+    }
   }
 }
 
@@ -86,11 +90,17 @@ blog-main {
   gap: var(--spc-150);
 }
 
-blog-tag {
+blog-tags a {
   background: var(--clr-yellow);
   font: var(--font-sml-bold);
   padding: var(--spc-50) var(--spc-150);
   border-radius: var(--spc-50);
+
+  &:hover,
+  &:focus {
+    background: var(--clr-gray-950);
+    color: var(--clr-yellow);
+  }
 }
 
 blog-date {
