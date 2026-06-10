@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  transition: font-size 200ms ease-in-out;
 }
 
 :root {
@@ -61,6 +62,7 @@ blog-card {
   background: var(--clr-white);
 
   width: var(--card-width);
+  transition: width 200ms ease-in-out;
 
   padding: var(--spc-300);
 
