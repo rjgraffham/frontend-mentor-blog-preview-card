@@ -11,10 +11,11 @@
   --font-med: 500 16px/1.5 "Figtree", sans-serif;
   --font-sml: 500 14px/1.5 "Figtree", sans-serif;
   --font-sml-bold: 800 14px/1.5 "Figtree", sans-serif;
-  --spc-300: 24px;
-  --spc-150: 12px;
-  --spc-100: 8px;
-  --spc-50: 4px;
+  --card-width: 24rem;
+  --spc-300: 1.5rem;
+  --spc-150: 0.75rem;
+  --spc-100: 0.5rem;
+  --spc-50: 0.25rem;
 }
 
 html,
@@ -36,6 +37,26 @@ body {
 blog-card {
   grid-row: 2;
   place-self: center;
+  width: var(--card-width);
+  padding: var(--spc-300);
+
+  h1 {
+    font: var(--font-lrg);
+  }
+}
+
+blog-tags,
+blog-date {
+  display: block;
+}
+
+blog-tag {
+  background: var(--clr-yellow);
+  font: var(--font-sml-bold);
+}
+
+blog-date {
+  font: var(--font-sml);
 }
 
 .attribution {
