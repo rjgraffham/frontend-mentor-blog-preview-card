@@ -5,10 +5,10 @@
 
 :root {
   /* general variables */
-  --clr-yellow: hsl(47deg, 88%, 63%);
-  --clr-gray-950: hsl(0deg, 0%, 7%);
-  --clr-gray-500: hsl(0deg, 0%, 42%);
-  --clr-white: hsl(0deg, 0%, 100%);
+  --clr-yellow: hsl(47deg 88% 63%);
+  --clr-gray-950: hsl(0deg 0% 7%);
+  --clr-gray-500: hsl(0deg 0% 42%);
+  --clr-white: hsl(0deg 0% 100%);
   --radius-outer: 1.25rem;
   --radius-inner: calc(var(--radius-outer) / 2);
   --spc-300: 1.5rem;
@@ -42,11 +42,8 @@ body {
 body {
   width: 100dvw;
   height: 100dvh;
-
   background: var(--clr-yellow);
-
   font: var(--font-body);
-
   display: grid;
   grid-template-rows: var(--spc-300) auto var(--spc-300);
 }
@@ -54,21 +51,15 @@ body {
 blog-card {
   grid-row: 2;
   place-self: center;
-
   display: flex;
   flex-direction: column;
   gap: var(--spc-300);
-
   background: var(--clr-white);
-
   width: var(--card-width);
   transition: width 200ms ease-in-out;
-
   padding: var(--spc-300);
-
   border: 1px solid var(--clr-gray-950);
   border-radius: var(--radius-outer);
-
   box-shadow: var(--spc-100) var(--spc-100);
 
   * {
