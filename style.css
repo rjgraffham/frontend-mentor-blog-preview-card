@@ -61,12 +61,22 @@ blog-card {
     padding: 0;
   }
 
-  img {
+  & > img {
     border-radius: var(--radius-inner);
   }
 
   h1 {
     font: var(--font-lrg);
+
+    cursor: pointer;
+
+    &:hover {
+      color: var(--clr-yellow);
+    }
+  }
+
+  p {
+    color: var(--clr-gray-500);
   }
 }
 
@@ -79,10 +89,27 @@ blog-main {
 blog-tag {
   background: var(--clr-yellow);
   font: var(--font-sml-bold);
+  padding: var(--spc-50) var(--spc-150);
+  border-radius: var(--spc-50);
 }
 
 blog-date {
   font: var(--font-sml);
+}
+
+blog-byline figure {
+  font: var(--font-sml-bold);
+  display: grid;
+  grid-template-columns: 2rem auto;
+  gap: var(--spc-150);
+
+  img {
+    height: 2rem;
+  }
+
+  figcaption {
+    place-self: center start;
+  }
 }
 
 .attribution {
