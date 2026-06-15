@@ -48,7 +48,7 @@ body {
   grid-template-rows: var(--spc-300) auto var(--spc-300);
 }
 
-blog-card {
+.blog-card {
   grid-row: 2;
   place-self: center;
   display: flex;
@@ -90,13 +90,13 @@ blog-card {
   }
 }
 
-blog-main {
+.blog-main {
   display: flex;
   flex-direction: column;
   gap: var(--spc-150);
 }
 
-blog-tags a {
+.blog-tags a {
   background: var(--clr-yellow);
   font: var(--font-card-tags);
   padding: var(--spc-50) var(--spc-150);
@@ -109,11 +109,11 @@ blog-tags a {
   }
 }
 
-blog-date {
+.blog-date {
   font: var(--font-card-date);
 }
 
-blog-byline figure {
+.blog-byline figure {
   font: var(--font-card-byline);
   display: grid;
   grid-template-columns: 2rem auto;
